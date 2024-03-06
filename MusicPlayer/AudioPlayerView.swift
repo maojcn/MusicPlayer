@@ -13,12 +13,10 @@ struct AudioPlayerView: View {
     @State private var currentTime: Double = 0
     @State private var totalTime: Double = 0
     
-    let audioURL = Bundle.main.url(forResource: "起风了", withExtension: "m4a")!
     let audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.path(forResource:"起风了", ofType: "m4a")!))
     
     var body: some View {
         VStack{
-            
             HStack {
                 Button(action: {
                     if isPlaying {
@@ -30,7 +28,7 @@ struct AudioPlayerView: View {
                 }) {
                     Image(systemName: isPlaying ? "pause.circle.fill" : "play.circle.fill")
                         .resizable()
-                        .frame(width: 80, height: 80)
+                        .frame(width: 50, height: 50)
                 }
                 .padding()
                 
@@ -44,14 +42,14 @@ struct AudioPlayerView: View {
                             }
                         }
                     })
-                    .padding()
+                    .padding(.horizontal)
                     
                     HStack{
                         Text(formatTime(currentTime))
                         Spacer()
                         Text(formatTime(totalTime))
                     }
-                    .padding()
+                    .padding(.horizontal)
                 }
             }
             .onAppear {
