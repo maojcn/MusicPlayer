@@ -61,7 +61,6 @@ struct AudioPlayerView: View {
                     currentTime = audioPlayer.currentTime
                 }
             }
-            
         }
 
     }

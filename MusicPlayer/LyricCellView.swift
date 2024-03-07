@@ -12,7 +12,7 @@ struct LyricCellView: View {
     
     var body: some View {
         Text(lyric.content)
-            .foregroundColor(.white)
+            .foregroundColor(.black)
             .font(.system(size: lyric.isBlur ? 25: 30, weight: .bold, design: .rounded))
             .multilineTextAlignment(.leading)
             .padding([.top, .bottom], 10)

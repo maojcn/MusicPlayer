@@ -11,13 +11,11 @@ struct LyricsView: View {
     @State var song: Song
     
     var body: some View {
-        List {
+        ScrollView {
             ForEach(song.lyrics, id: \.id) { line in
                 LyricCellView(lyric: line)
                     .id(line.id)
             }
-            .listRowBackground(Color.clear.ignoresSafeArea())
-            .listRowSeparator(.hidden)
         }
         .listStyle(PlainListStyle())
     }

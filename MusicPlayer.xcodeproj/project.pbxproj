@@ -12,6 +12,11 @@
 		8A7EA84F2B98B6C800E06AAE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7EA84E2B98B6C800E06AAE /* Item.swift */; };
 		8A7EA8512B98B6C900E06AAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A7EA8502B98B6C900E06AAE /* Assets.xcassets */; };
 		8A7EA8542B98B6C900E06AAE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A7EA8532B98B6C900E06AAE /* Preview Assets.xcassets */; };
+		8A7EA8602B98DE3300E06AAE /* 起风了.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8A7EA85F2B98DE3300E06AAE /* 起风了.m4a */; };
+		8A7EA8642B98E54A00E06AAE /* AudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7EA8632B98E54A00E06AAE /* AudioPlayerView.swift */; };
+		8A7EA8682B98F6C700E06AAE /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7EA8672B98F6C700E06AAE /* Song.swift */; };
+		8A7EA86A2B98FBF900E06AAE /* LyricCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7EA8692B98FBF900E06AAE /* LyricCellView.swift */; };
+		8A7EA86E2B98FCB300E06AAE /* LyricsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7EA86D2B98FCB300E06AAE /* LyricsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		8A7EA8502B98B6C900E06AAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A7EA8532B98B6C900E06AAE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8A7EA8552B98B6C900E06AAE /* MusicPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MusicPlayer.entitlements; sourceTree = "<group>"; };
+		8A7EA85F2B98DE3300E06AAE /* 起风了.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "起风了.m4a"; sourceTree = "<group>"; };
+		8A7EA8632B98E54A00E06AAE /* AudioPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerView.swift; sourceTree = "<group>"; };
+		8A7EA8672B98F6C700E06AAE /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		8A7EA8692B98FBF900E06AAE /* LyricCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricCellView.swift; sourceTree = "<group>"; };
+		8A7EA86D2B98FCB300E06AAE /* LyricsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +64,14 @@
 		8A7EA8492B98B6C800E06AAE /* MusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				8A7EA85F2B98DE3300E06AAE /* 起风了.m4a */,
 				8A7EA84A2B98B6C800E06AAE /* MusicPlayerApp.swift */,
 				8A7EA84C2B98B6C800E06AAE /* ContentView.swift */,
 				8A7EA84E2B98B6C800E06AAE /* Item.swift */,
+				8A7EA8632B98E54A00E06AAE /* AudioPlayerView.swift */,
+				8A7EA8672B98F6C700E06AAE /* Song.swift */,
+				8A7EA8692B98FBF900E06AAE /* LyricCellView.swift */,
+				8A7EA86D2B98FCB300E06AAE /* LyricsView.swift */,
 				8A7EA8502B98B6C900E06AAE /* Assets.xcassets */,
 				8A7EA8552B98B6C900E06AAE /* MusicPlayer.entitlements */,
 				8A7EA8522B98B6C900E06AAE /* Preview Content */,
@@ -130,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A7EA8602B98DE3300E06AAE /* 起风了.m4a in Resources */,
 				8A7EA8542B98B6C900E06AAE /* Preview Assets.xcassets in Resources */,
 				8A7EA8512B98B6C900E06AAE /* Assets.xcassets in Resources */,
 			);
@@ -142,9 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A7EA8682B98F6C700E06AAE /* Song.swift in Sources */,
 				8A7EA84D2B98B6C800E06AAE /* ContentView.swift in Sources */,
+				8A7EA86A2B98FBF900E06AAE /* LyricCellView.swift in Sources */,
 				8A7EA84F2B98B6C800E06AAE /* Item.swift in Sources */,
 				8A7EA84B2B98B6C800E06AAE /* MusicPlayerApp.swift in Sources */,
+				8A7EA86E2B98FCB300E06AAE /* LyricsView.swift in Sources */,
+				8A7EA8642B98E54A00E06AAE /* AudioPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
