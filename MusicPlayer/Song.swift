@@ -18,7 +18,7 @@ class Song: ObservableObject {
 }
 
 
-class Lyric {
+class Lyric: Hashable {
     var id: UUID = UUID()
     var content: String
     var isBlur: Bool
@@ -28,5 +28,13 @@ class Lyric {
         self.content = content
         self.isBlur = isBlur
         self.time = time
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+    
+    static func == (lhs: Lyric, rhs: Lyric) -> Bool {
+        return lhs.id == rhs.id
     }
 }

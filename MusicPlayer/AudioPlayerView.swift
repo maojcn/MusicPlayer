@@ -17,7 +17,7 @@ struct AudioPlayerView: View {
     
     var body: some View {
         VStack{
-            HStack {
+            HStack(alignment: .center) {
                 Button(action: {
                     if isPlaying {
                         audioPlayer.pause()

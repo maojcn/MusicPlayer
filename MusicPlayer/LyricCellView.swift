@@ -9,6 +9,11 @@ import SwiftUI
 
 struct LyricCellView: View {
     @State var lyric: Lyric
+    @EnvironmentObject var songState: SongState
+    
+    var lyricIndex: Int? {
+        songState.song.lyrics.firstIndex { $0.id == lyric.id }
+        }
     
     var body: some View {
         Text(lyric.content)
@@ -17,6 +22,18 @@ struct LyricCellView: View {
             .multilineTextAlignment(.leading)
             .padding([.top, .bottom], 10)
             .blur(radius: lyric.isBlur ? 2: 0)
+            .onTapGesture {
+                updateSelectedLyric()
+            }
+    }
+    
+    func updateSelectedLyric() {
+        guard let index = lyricIndex else { return }
+        songState.song.lyrics.indices.forEach { lyricIndex in
+                        songState.song.lyrics[lyricIndex].isBlur = true
+                    }
+        songState.song.lyrics[index].isBlur = false
+        songState.currentIndext = index
     }
 }
 
